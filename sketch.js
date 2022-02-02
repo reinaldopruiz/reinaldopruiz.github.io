@@ -67,24 +67,3 @@ function move() {
   BitcoinBubble.x = BitcoinBubble.x + BitcoinBubble.xspeed;
   BitcoinBubble.y = BitcoinBubble.y + BitcoinBubble.yspeed;
 }
-function bounce() {
-  if (BitcoinBubble.x > width || BitcoinBubble.x < 0) {
-    BitcoinBubble.xspeed = BitcoinBubble.xspeed * -1;
-  }
-
-  if (BitcoinBubble.y > height || BitcoinBubble.y < 0) {
-    BitcoinBubble.yspeed = BitcoinBubble.yspeed * -1;
-  }
-}
-
-function display() {
-  stroke(random(255));
-  strokeWeight(4);
-  fill(random(233,235), random (189, 191), random (62, 64));
-  ellipse(BitcoinBubble.x - random(-150, 100), BitcoinBubble.y - random(-150, 100), random(45), random(45));
-}
-
-function move() {
-  BitcoinBubble.x = BitcoinBubble.x + BitcoinBubble.xspeed;
-  BitcoinBubble.y = BitcoinBubble.y + BitcoinBubble.yspeed;
-}
